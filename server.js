@@ -34,10 +34,10 @@ app.use('/api/order', require('./routes/order.route'))
 
 //midelware pour render 
 
-// app.use((req, res) => {
-//   res.send("Api is running");
-// }
-// );
+app.use((req, res) => {
+  res.send("Api is running");
+}
+);
 
 //Port
 const PORT = process.env.PORT || 5000;
